@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url(hero-bg.jpg);
+    color: rgb(237, 234, 234);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+}
+
+.parent p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.parent h1 {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.parent .small-txt {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tasbeh {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+}
+
+.tasbeh button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #cb4250;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.206);
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.tasbeh button:hover {
+    background-color: #8a4249;
+}
+
+.tasbeh h1 {
+    font-size: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.tasbeh h2 {
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%);
+    color: #eef0f2;
+}
+
+.tasbeh-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 50px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.sebha {
+    width: calc(90% / 4);
+    height: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.103);
+    border: 1px solid transparent;
+    transition: .3s;
+    position: relative;
+    border-radius: 5px;
+}
+
+.sebha:hover {
+    border-color: #ffb727;
+}
+
+.sebha h4 {
+    font-size: 20px;
+    user-select: none;
+    font-weight: 600;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff4df;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.circle p {
+    font-size: 20px;
+    user-select: none;
+}
+
+#count1,
+#count2,
+#count3,
+#count4,
+#count5,
+#count6,
+#count7,
+#count8,
+#count9,
+#count10,
+#count11,
+#count12 {
+    color: #ffb727;
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.duaa {
+    height: 600px;
+    background-image: url(kaaba.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -300px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    direction: rtl;
+}
+
+.duaa .cover {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    position: absolute;
+}
+
+.duaa h1,
+.duaa p {
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.duaa h1 {
+    margin-bottom: 10px;
+}
+
+.duaa p {
+    font-size: 25px;
+}
+
+@media (max-width: 1600px) {
+    .duaa {
+        background-position: 0 0;
+    }
+}
+
+@media (max-width: 1300px) {
+    .tasbeh-container .sebha {
+        width: calc(90% / 3);
+    }
+
+    .duaa {
+        bottom: -100px;
+    }
+
+    .duaa p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .tasbeh-container .sebha {
+        width: calc(90% / 2);
+    }
+
+    .duaa {
+        text-align: center;
+    }
+
+    .duaa p {
+        width: 400px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 600px) {
+    .tasbeh-container {
+        justify-content: center;
+        margin: 50px 20px;
+    }
+
+    .tasbeh-container .sebha {
+        width: calc(90% / 1);
+    }
+
+    .parent p,
+    .parent .small-txt {
+        font-size: 20px;
+    }
+
+    .parent h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .parent p,
+    .parent .small-txt {
+        font-size: 18px;
+    }
+
+    .parent h1 {
+        font-size: 30px;
+    }
+
+    .duaa p {
+        width: fit-content;
+        line-height: 1.4;
+        font-size: 18px;
+    }
+}
